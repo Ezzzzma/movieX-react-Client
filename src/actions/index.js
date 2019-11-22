@@ -6,7 +6,9 @@ export const getMovies = () => async dispatch => {
   // dispatch({ type: "GET_MOVIES" });
 
   try {
-    const response = await axios.get(`${API_HOST}/movies`);
+    const response = await axios.get(
+      `https://lit-waters-49720.herokuapp.com/movies`
+    );
     if (response.status === 200) {
       dispatch({ type: "GET_MOVIES", payload: response.data });
       dispatch({ type: "LOADING_FINISH" });

@@ -167,10 +167,12 @@ export default class Home extends Component {
           </div>
         </div>
         <br></br>
-        <div className="row justify-content-left m-4">
-          <div className="col-6">
+        <div className="row justify-content-center m-4">
+          <div className="col-12">
             <Link to="/movies">
-              <button className="btn btn-light w-75">Show Me All Movies</button>
+              <button className="btn btn-light w-100 text-center">
+                Show Me All Movies
+              </button>
             </Link>
           </div>
         </div>
